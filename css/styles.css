@@ -1,8 +1,18 @@
 body {
     padding-top: 3rem;
     padding-bottom: 3rem;
-
     color: #5a5a5a;
+}
+
+.top-image {
+    background: orange;
+    height: 400px;
+}
+
+.head-title {
+    text-align: center;
+    color: #fff;
+    font-weight: normal;    
 }
 
 .carousel {
