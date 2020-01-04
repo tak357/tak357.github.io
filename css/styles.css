@@ -26,14 +26,6 @@ body {
     height: 32rem;
 }
 
-@media (min-width: 40rem) {
-    .carousel-caption p {
-        margin-bottom: 1.25rem;
-        font-size: 1.25rem;
-        line-height: 1.4;
-    }
-}
-
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -47,48 +39,22 @@ body {
     margin-top: 100px;
 }
 
-.marketing .col-lg {
-    margin-bottom: 1.5rem;
-}
-
 .marketing h2 {
     font-weight: 400;
     margin: 1.5rem 0;
 }
 
-.marketing li {
-    margin: 0.5rem;
+.underline {
+    background: linear-gradient(transparent 80%, #ffff66 80%);
+    display: inline;
+    /* border: solid 3px #666;
+    padding: 5px; */
 }
 
-.marketing .col-lg p {
-    margin-right: .75rem;
-    margin-left: .75rem;
+.marketing li {
+    margin: 0.75rem;
 }
 
 .featurette-divider {
     margin: 5rem 0;
-}
-
-.featurette-heading {
-    font-weight: 300;
-    line-height: 1;
-    letter-spacing: -.05rem;
-}
-
-@media (min-width: 40rem) {
-    .featurette-heading {
-        font-size: 50px;
-    }
-}
-
-@media (min-width: 62rem) {
-    .featurette-heading {
-        margin-top: 7rem;
-    }
-}
-
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-    }
 }
