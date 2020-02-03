@@ -32,11 +32,6 @@
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
             <a class="navbar-brand" href="#">My Portfolio</a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
         </nav>
     </header>
 
@@ -44,6 +39,7 @@
         <div class="container marketing">
             <div class="row">
                 <div class="col-lg text-center">
+                    <!-- デザイン調整 -->
                     <div class="space"></div>
                     <img src="./img/52248763.png" class="bd-placeholder-img rounded-circle" width="140" height="140"
                         xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
@@ -55,14 +51,20 @@
 
             <hr class="featurette-divider">
 
-            <i class="fas fa-file"></i>
-            <h2 class="underline">主な経歴</h2>
-            <ul>
-                <li>関西学院大学 経済学部 卒業</li>
-                <li>メガバンクでプログラマ（汎用機）</li>
-                <li>専業アフィリエイター</li>
-                <li>SESで社内SE、研修講師（Java）、保守・運用</li>
-            </ul>
+            <div class="container marketing">
+                <div class="row">
+                    <div class="col-lg">
+                        <i class="fas fa-file"></i>
+                        <h2 class="underline">主な経歴</h2>
+                        <ul>
+                            <li>関西学院大学 経済学部 卒業</li>
+                            <li>メガバンクでプログラマ（汎用機）</li>
+                            <li>専業アフィリエイター</li>
+                            <li>SESで社内SE、研修講師（Java）、保守・運用</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
             <hr class="featurette-divider">
 
@@ -71,10 +73,9 @@
                     <i class="fas fa-code"></i>
                     <h2 class="underline">主な習得技術</h2>
                     <ul>
-                        <li>HTML/CSS</li>
+                        <li>HTML/CSS/BootStrap</li>
                         <li>PHP/Laravel</li>
                         <li>JavaScript</li>
-                        <li>BootStrap</li>
                         <li>Java</li>
                         <li>PL/I・EasyTrievePlus（汎用機言語）</li>
                     </ul>
@@ -85,31 +86,46 @@
 
             <div class="row featurette">
                 <div class="col-md">
-
-                    <i class="fas fa-wrench"></i>
-                    <h2 class="underline">主な習得ツール等</h2>
-                    <ul>
-                        <li>Git/SVN</li>
-                        <li>Docker/Vagrant</li>
-                        <li>Linux/Mac/Windows</li>
-                        <li>MySQL/OracleDB</li>
-                        <li>PHP Storm/Visual Studio Code</li>
-                    </ul>
-
+                    <div class="col-md">
+                        <i class="fas fa-wrench"></i>
+                        <h2 class="underline">主な習得ツール等</h2>
+                        <ul>
+                            <li>Git/SVN</li>
+                            <li>Docker/Vagrant</li>
+                            <li>Linux/Mac/Windows</li>
+                            <li>MySQL/OracleDB</li>
+                            <li>PHP Storm/Visual Studio Code</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
             <hr class="featurette-divider">
 
             <div class="row featurette">
-                <div class="col-md">
-                    <i class="fas fa-running"></i>
-                    <h2 class="underline">挑戦したいこと</h2 class="underline">
-                    <ul>
-                        <li>PHP/LaravelでWebサービス作りをしたい。</li>
-                        <li>CSS/JavaScriptの理解を深めてきれいなデザインのページを作りたい。</li>
-                        <li>AWS・Circle CI/CDを使いこなせるようになりたい。</li>
-                    </ul>
+                <div class="col-lg">
+                    <i class="fas fa-file"></i>
+                    <h2 class="underline">ポートフォリオ</h2>
+                    <p><a target="_blank" href="http://qiita-fake.herokuapp.com/"><img src="img/site_image.png" width="320"></a></p>
+                    <p>■qiita風の記事投稿サービス</p>
+                    <p>使用技術：PHP/Laravel/MySQL/Bootstrap</p>
+                    <p>source:  <a target="_blank" href="https://github.com/tak357/qiita">github</a></p>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="row">
+                    <div class="col-md">
+                        <i class="fas fa-running"></i>
+                        <h2 class="underline">挑戦したいこと</h2 class="underline">
+                        <ul>
+                            <li>PHP/LaravelでWebサービス作りをしたい。</li>
+                            <li>CSS/JavaScriptの理解を深めてきれいなデザインのページを作りたい。</li>
+                            <li>AWS・Circle CIを使いこなせるようになりたい。</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -129,15 +145,14 @@
             <hr class="featurette-divider">
 
         </div>
-
-        <hr>
-
-        <footer class="container">
-            <p><a class="float-right" href="#">Back to top</a></p>
-            <p>© 2019</p>
-        </footer>
-
     </main>
+
+    <hr>
+
+    <footer class="container">
+        <p><a class="float-right" href="#">Back to top</a></p>
+        <p>© 2019</p>
+    </footer>
 
 </body>
 
