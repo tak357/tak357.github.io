@@ -7,12 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ポートフォリオサイト</title>
 
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/jquery.magnific-popup.js"></script>
+
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
@@ -24,22 +24,30 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/magnific-popup.css">
+
+    <!-- ファビコン -->
     <link rel="icon" href="./img/favicon.png">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157747930-1"></script>
+
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'UA-157747930-1');
-    </script>
 
+        $(function(){
+            $('.popup-image').magnificPopup({
+                type: 'image'
+            });
+        });
+    </script>
 </head>
 
 <body>
-
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
             <a class="navbar-brand" href="/">My Portfolio</a>
@@ -124,26 +132,28 @@
                     <h2 class="underline">ポートフォリオ</h2>
                     <div class="clearfix"></div>
                     <div class="item">
-                        <p><a target="_blank" href="http://kuchiran.work/"><img width="95%" src="img/site_image4.png"
-                                    alt=""></a></p>
+                        <p><a target="_blank" href="img/site_image4.png" class="popup-image">
+                            <img width="95%" src="img/site_image4.png" alt=""></a></p>
                         <ul>
                             <li>パソコンの口コミサイト</li>
                             <li>使用技術：PHP(Laravel) / JavaScript / MySQL / Bootstrap</li>
                             <li>サーバ：AWS(EC2 / ElasticIP / Route53)</li>
                             <li>source：<a target="_blank" href="https://github.com/tak357/kuchikomi">github</a></li>
-                            <li>リンク：<a target="_blank" href="http://kuchiran.work/">Webサイト</a></li>
+                            <!-- <li>リンク：<a target="_blank" href="http://kuchiran.work/">Webサイト</a></li> -->
                         </ul>
                     </div>
                     <div class="item">
-                        <p><a target="_blank" href="http://true-eyes.com/"><img width="95%" src="img/site_image5.png">
-                        </p></a>
+                        <p>
+                            <a target="_blank" href="img/site_image5.png" class="popup-image">
+                                <img width="95%" src="img/site_image5.png">
+                            </a>
                         </p>
                         <ul>
                             <li>qiita風のブログサービス</li>
                             <li>使用技術：PHP(Laravel) / JavaScript(JQuery) / MySQL / Bootstrap</li>
                             <li>サーバ：AWS(EC2 / RDS / ElasticIP / Route53)</li>
                             <li>source: <a target="_blank" href="https://github.com/tak357/qiita">github</a></li>
-                            <li>リンク: <a target="_blank" href="http://true-eyes.com/">webサイト</a></li>
+                            <!-- <li>リンク: <a target="_blank" href="http://true-eyes.com/">webサイト</a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -156,7 +166,11 @@
                     <i class="fas fa-file"></i>
                     <h2 class="underline">達成したこと</h2>
                     <br>
-                    <p><img src="img/site_image2.png" width="95%" alt="Googleアナリティクスのスクリーンショット"></p>
+                    <p>
+                        <a href="img/site_image2.png" class="popup-image">
+                            <img src="img/site_image2.png" width="95%" alt="Googleアナリティクスのスクリーンショット">                        
+                        </a>
+                    </p>
                     <ul>
                         <li>累計900万ページビュー達成</li>
                         <li>使用技術：Wordpress / HTML / CSS</li>
@@ -201,7 +215,7 @@
 
     <footer class="container">
         <p><a class="float-right" href="#">Back to top</a></p>
-        <p>© 2019</p>
+        <p>© 2019 -2021</p>
     </footer>
 
 </body>
